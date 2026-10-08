@@ -1,0 +1,27 @@
+/* Change these colors to match your main site */
+:root{--bg:#f7f9fc;--card:#fff;--text:#1b2433;--muted:#5b6678;--accent:#1f5eff;--line:#dfe5ee}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1622;--card:#172032;--text:#e8edf5;--muted:#9aa6b8;--accent:#6b96ff;--line:#26314a}}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
+a{color:var(--accent)}
+header,footer{max-width:760px;margin:0 auto;padding:1.2rem 1rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap}
+header a.logo{font-weight:700;font-size:1.2rem;text-decoration:none;color:var(--text)}
+nav a{margin-left:1rem;text-decoration:none;color:var(--muted)}
+nav a:hover,nav a:focus-visible{color:var(--accent)}
+main{max-width:760px;margin:0 auto;padding:1rem}
+h1{font-size:clamp(1.7rem,5vw,2.4rem);line-height:1.2;margin:.5rem 0 1rem}
+h2{font-size:1.4rem;margin-top:2rem}
+.meta{color:var(--muted);font-size:.9rem}
+.post-card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:1.2rem;margin:1rem 0}
+.post-card h2{margin:.2rem 0 .4rem}
+.post-card h2 a{text-decoration:none;color:var(--text)}
+.post-card h2 a:hover{color:var(--accent)}
+.faq details{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:.7rem 1rem;margin:.6rem 0}
+.faq summary{cursor:pointer;font-weight:600}
+.cta{background:var(--accent);color:#fff;border-radius:10px;padding:1.2rem;margin:2rem 0}
+.cta a{color:#fff;font-weight:700}
+footer{color:var(--muted);font-size:.9rem;border-top:1px solid var(--line);margin-top:2rem}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+.hero-img{width:100%;height:auto;display:block;border-radius:12px;border:1px solid var(--line);margin:1rem 0 1.5rem}
+.post-card img.thumb{width:100%;height:auto;display:block;border-radius:8px;margin:0 0 .8rem;border:1px solid var(--line)}
